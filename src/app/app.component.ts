@@ -1,3 +1,4 @@
+
 import { Component } from '@angular/core';
 
 @Component({
@@ -6,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  goal = 'Watch Finding Nemo'
+  goals:string[];
+
+  constructor(){
+    this.goals = ['Drink some redbull', 'Compile some code', 'Chat with the buddies']
+  }
 }
